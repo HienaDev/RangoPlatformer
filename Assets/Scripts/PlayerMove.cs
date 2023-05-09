@@ -13,7 +13,7 @@ public class PlayerMove : MonoBehaviour
     private float defaultSpeed;
     private Rigidbody2D rb;
     private Vector2 currentVelocity;
-    // private Animator animator;
+    private Animator animator;
 
 
     // Variables to check if the player is on the ground
@@ -48,7 +48,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private float bulletSpeed;
 
     // Camera Variables 
-    [SerializeField] private Camera camera;
+    private Camera camera;
     private CameraFollow cameraScript;
 
     // Cameras related to mouse
@@ -64,7 +64,9 @@ public class PlayerMove : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         defaultSpeed = moveSpeed;
-        //animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
+
+        camera = Camera.main;
 
         cameraScript = camera.GetComponent<CameraFollow>();
 
@@ -115,7 +117,7 @@ public class PlayerMove : MonoBehaviour
 
         AimMethod();
 
-        
+        animator.SetFloat("MoveSpeed", Mathf.Abs(currentVelocity.x));
 
         if (Input.GetKeyDown(KeyCode.C) && cactusReady)
         {
