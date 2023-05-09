@@ -13,10 +13,13 @@ public class onShadow : MonoBehaviour
 
     [SerializeField] private float startingDehydration;
 
+    private LineRenderer line;
+
     // Start is called before the first frame update
     void Start()
     {
         dehydrationBar.fillAmount = startingDehydration;
+        line = GetComponent<LineRenderer>();
     }
 
     private void Update()
@@ -34,11 +37,21 @@ public class onShadow : MonoBehaviour
 
         Debug.DrawLine(gameObject.transform.position, lightSource.transform.position);
 
+        Vector3[] positions = { gameObject.transform.position, lightSource.transform.position };
+
+        line.SetPositions(positions);
         //Debug.Log(hit.transform);
 
         if (hit.transform == null && dehydrationBar.transform.localScale.x > 0 && dehydrationBar.fillAmount > 0)
         {
             dehydrationBar.fillAmount -= dehydrationSpeed;
+            line.startColor = Color.red;
+            line.endColor = Color.red;
+        }
+        else
+        {
+            line.startColor = Color.white;
+            line.endColor = Color.white;
         }
     }
 }
