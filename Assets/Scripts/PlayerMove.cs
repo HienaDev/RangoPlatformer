@@ -10,7 +10,7 @@ public class PlayerMove : MonoBehaviour
 
     // Player Variables (Colliders, speed, rigidbody, animations)
 
-    [SerializeField] private float moveSpeed = 100f;
+    [SerializeField, Header("Player")] private float moveSpeed = 100f;
     [SerializeField] private Collider2D groundCollider;
     [SerializeField] private Collider2D airCollider;
     private float defaultSpeed;
@@ -18,9 +18,8 @@ public class PlayerMove : MonoBehaviour
     private Vector2 currentVelocity;
     private Animator animator;
 
-
     // Variables to check if the player is on the ground
-    [SerializeField] private Transform groundCheck;
+    [SerializeField, Header("\nGroundCheck")] private Transform groundCheck;
     [SerializeField] private float groundCheckRadius = 2f;
     [SerializeField] private float groundCheckSeparation;
     [SerializeField] private LayerMask groundMask;
@@ -29,7 +28,7 @@ public class PlayerMove : MonoBehaviour
 
 
     // Variables related to the player's jump
-    [SerializeField] private float jumpMaxTime;
+    [SerializeField, Header("\nJump")] private float jumpMaxTime;
     [SerializeField] private float jumpSpeed = 125f;
     [SerializeField] private float coyoteTime;
     [SerializeField] private int maxJumps;
@@ -39,20 +38,22 @@ public class PlayerMove : MonoBehaviour
     private int nJumps;
 
     // Variables for the cactus power up
-    [SerializeField] private bool cactusReady = false;
+    [SerializeField, Header("\nCactus")] private bool cactusReady = false;
     [SerializeField] private float cactusSpeed;
     [SerializeField] private float cactusTimer;
     private float cactusWasActivated;
 
     // Variables for the burp power up
     private bool fireBurpReady = false;
-    [SerializeField] private GameObject fireBurp;
+    [SerializeField, Header("\nFireBurp")] private GameObject fireBurp;
     [SerializeField] private float fireBurpTimer;
     private float fireBurpWasActivated;
 
     // Variables for the one shot power up
-    [SerializeField] private bool oneShotReady = false;
+    [SerializeField, Header("\nOneShot")] private bool oneShotReady = false;
     [SerializeField] private GameObject bullet;
+    [SerializeField] private GameObject bulletSign;
+    private SpriteRenderer bulletSignRenderer;
     [SerializeField] private Transform firePoint;
     [SerializeField] private float bulletSpeed;
 
@@ -61,7 +62,7 @@ public class PlayerMove : MonoBehaviour
     private CameraFollow cameraScript;
 
     // Cameras related to mouse
-    [SerializeField] GameObject mouseObject;
+    [SerializeField, Header("\nMouse")] GameObject mouseObject;
     private Vector2 lookDirection;
     private float lookAngle;
 
@@ -71,6 +72,8 @@ public class PlayerMove : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        bulletSignRenderer = bulletSign.GetComponent<SpriteRenderer>();
 
         defaultSpeed = moveSpeed;
         animator = GetComponent<Animator>();
@@ -86,12 +89,18 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetMouseButton(1))
         {
             if (camera.orthographicSize > 160)
+            { 
                 camera.orthographicSize -= 0.5f;
+                bulletSign.transform.position = new Vector3(bulletSign.transform.position.x, bulletSign.transform.position.y - 0.5f, bulletSign.transform.position.z);
+            }
         }
         else
         {
             if (camera.orthographicSize < 180)
+            { 
                 camera.orthographicSize += 0.5f;
+                bulletSign.transform.position = new Vector3(bulletSign.transform.position.x, bulletSign.transform.position.y + 0.5f, bulletSign.transform.position.z);
+            }
 
         }
     }
@@ -105,6 +114,7 @@ public class PlayerMove : MonoBehaviour
                 if (Input.GetMouseButtonDown(0))
                 {
                     ShootOneShot();
+                    oneShotReady = false;
                 }
             }
         }
@@ -137,11 +147,18 @@ public class PlayerMove : MonoBehaviour
 
         if ((Time.time - cactusWasActivated) > cactusTimer)
         {
+
+            if (moveSpeed == cactusSpeed)
+            {
+                fireBurpReady = true;
+            }
+
             moveSpeed = defaultSpeed;
 
-            fireBurpReady = true;
-
+      
         }
+
+        
 
         if (fireBurpReady)
         {
@@ -156,8 +173,23 @@ public class PlayerMove : MonoBehaviour
             fireBurp.SetActive(false);
         }
 
-            currentVelocity.x = Input.GetAxis("Horizontal") * moveSpeed;
+
+
+        if (oneShotReady)
+        {
+            bulletSign.SetActive(true);
+        }
+
+        if (!oneShotReady && bulletSign.activeSelf)
+        {
+            bulletSignRenderer.color = new Color(1f, 1f, 1f, 0.5f);
+        }
+
+
+
+        currentVelocity.x = Input.GetAxis("Horizontal") * moveSpeed;
         
+
         if (grounded && currentVelocity.y <= 1e-3)
         {
             leftGround = Time.time;
