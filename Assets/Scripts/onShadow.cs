@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class onShadow : MonoBehaviour
+public class OnShadow : MonoBehaviour
 {
 
     [SerializeField] private GameObject lightSource;
@@ -13,10 +13,12 @@ public class onShadow : MonoBehaviour
 
     [SerializeField] private float startingDehydration;
 
+
     private LineRenderer line;
 
     // Start is called before the first frame update
-    void Start()
+    
+    private void Start()
     {
         dehydrationBar.fillAmount = startingDehydration;
         line = GetComponent<LineRenderer>();

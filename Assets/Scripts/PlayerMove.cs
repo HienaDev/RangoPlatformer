@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class PlayerMove : MonoBehaviour
 {
+
+    //[RequireComponent()]
+
     // Player Variables (Colliders, speed, rigidbody, animations)
 
     [SerializeField] private float moveSpeed = 100f;
@@ -84,7 +87,9 @@ public class PlayerMove : MonoBehaviour
         }
         else
         {
-            camera.orthographicSize = 180;
+            if (camera.orthographicSize < 180)
+                camera.orthographicSize += 0.5f;
+
             Cursor.visible = false;
         }
     }
@@ -177,14 +182,14 @@ public class PlayerMove : MonoBehaviour
 
         FlipPlayer();
 
-        //if (grounded)
-        //{
-        //    gameObject.GetComponent<SpriteRenderer>().color = Color.green;
-        //}
-        //else
-        //{
-        //    gameObject.GetComponent<SpriteRenderer>().color = Color.red;
-        //}
+        if (grounded)
+        {
+            gameObject.GetComponent<SpriteRenderer>().color = Color.green;
+        }
+        else
+        {
+            gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+        }
     }
 
     private void FlipPlayer()
@@ -193,6 +198,15 @@ public class PlayerMove : MonoBehaviour
             transform.rotation = Quaternion.Euler(0f, 180f, 0f);
         else if (currentVelocity.x > 0 && transform.right.x < 0)
             transform.rotation = Quaternion.identity;
+
+        // https://answers.unity.com/questions/640162/detect-mouse-in-right-side-or-left-side-for-player.html
+        var playerScreenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
+        if (Input.mousePosition.x < playerScreenPoint.x)
+            transform.rotation = Quaternion.Euler(0f, 180f, 0f);
+        else
+            transform.rotation = Quaternion.identity;
+        //Debug.Log($"Input.mousePosition: {(Input.mousePosition.x - 615) / 2},{(Input.mousePosition.y - 360) / 2}");
+        //Debug.Log($"gameObject.transform.position: {gameObject.transform.position}");
     }
 
     public bool GetCactusPower() => cactusReady;
@@ -212,6 +226,8 @@ public class PlayerMove : MonoBehaviour
         bulletClone.transform.rotation = Quaternion.LookRotation(Vector3.forward, upDir);
 
         bulletClone.GetComponent<Rigidbody2D>().velocity = bulletClone.transform.right * bulletSpeed;
+
+        
         //SetOneShotPower(false);
     }
     
@@ -228,6 +244,9 @@ public class PlayerMove : MonoBehaviour
 
 
         firePoint.rotation = Quaternion.Euler(0, 0, lookAngle);
+
+        
+
     }
 
     public void SetMaxJumps(int n)
