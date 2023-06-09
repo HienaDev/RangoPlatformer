@@ -22,4 +22,14 @@ public class DestroyCollision : MonoBehaviour
         if (!(x == bouncyLayer.value))
             Destroy (gameObject);
     }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        int x = 1 << collision.gameObject.layer;
+
+
+
+        if (x == destroyableLayer.value)
+            Destroy(collision.gameObject);
+    }
 }

@@ -44,6 +44,12 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private float cactusTimer;
     private float cactusWasActivated;
 
+    // Variables for the burp power up
+    private bool fireBurpReady = false;
+    [SerializeField] private GameObject fireBurp;
+    [SerializeField] private float fireBurpTimer;
+    private float fireBurpWasActivated;
+
     // Variables for the one shot power up
     [SerializeField] private bool oneShotReady = false;
     [SerializeField] private GameObject bullet;
@@ -81,16 +87,12 @@ public class PlayerMove : MonoBehaviour
         {
             if (camera.orthographicSize > 160)
                 camera.orthographicSize -= 0.5f;
-
-            Cursor.visible = true;
-            
         }
         else
         {
             if (camera.orthographicSize < 180)
                 camera.orthographicSize += 0.5f;
 
-            Cursor.visible = false;
         }
     }
 
@@ -124,7 +126,7 @@ public class PlayerMove : MonoBehaviour
 
         animator.SetFloat("MoveSpeed", Mathf.Abs(currentVelocity.x));
 
-        if (Input.GetKeyDown(KeyCode.C) && cactusReady)
+        if (cactusReady)
         {
             moveSpeed = cactusSpeed;
 
@@ -136,9 +138,25 @@ public class PlayerMove : MonoBehaviour
         if ((Time.time - cactusWasActivated) > cactusTimer)
         {
             moveSpeed = defaultSpeed;
+
+            fireBurpReady = true;
+
         }
 
-        currentVelocity.x = Input.GetAxis("Horizontal") * moveSpeed;
+        if (fireBurpReady)
+        {
+            fireBurp.SetActive(true);
+            fireBurpWasActivated = Time.time;
+
+            fireBurpReady = false;
+        }
+
+        if ((Time.time - fireBurpWasActivated) > fireBurpTimer)
+        {
+            fireBurp.SetActive(false);
+        }
+
+            currentVelocity.x = Input.GetAxis("Horizontal") * moveSpeed;
         
         if (grounded && currentVelocity.y <= 1e-3)
         {
@@ -200,11 +218,14 @@ public class PlayerMove : MonoBehaviour
             transform.rotation = Quaternion.identity;
 
         // https://answers.unity.com/questions/640162/detect-mouse-in-right-side-or-left-side-for-player.html
-        var playerScreenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
-        if (Input.mousePosition.x < playerScreenPoint.x)
-            transform.rotation = Quaternion.Euler(0f, 180f, 0f);
-        else
-            transform.rotation = Quaternion.identity;
+        if (Input.GetMouseButton(1))
+        { 
+            var playerScreenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
+            if (Input.mousePosition.x < playerScreenPoint.x)
+                transform.rotation = Quaternion.Euler(0f, 180f, 0f);
+            else
+                transform.rotation = Quaternion.identity;
+        }
         //Debug.Log($"Input.mousePosition: {(Input.mousePosition.x - 615) / 2},{(Input.mousePosition.y - 360) / 2}");
         //Debug.Log($"gameObject.transform.position: {gameObject.transform.position}");
     }
