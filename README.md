@@ -1,85 +1,127 @@
-# OKAPI KIT
+# Rango - The Game - Game Design Document
 
-![TitleImage](Screenshots/title.png)
 
-This is a series of premade scripts intended for kit bashing of quick game development experiments for the  [Licenciatura em Videojogos][lv] da [Universidade Lusófona de Humanidades e Tecnologias][ULHT] in Lisbon.
 
-It's currently still under development, and eventually will be commented properly, and have a manual.
+## Table of Contents:
 
-# Samples
+Story (Lore);
 
-It currently has six sample 'games' (each a Scene under the Samples directory), accessible through a menu (Samples scene, also in the Samples directory).
+Themes;
 
-## Pong 
-![PongImage](Screenshots/pong.png)
+Game Genre;
 
-## Breakout
-![BreakoutImage](Screenshots/breakout.png)
+Gameplay;
 
-## Space Invaders
-![SpaceInvadersImage](Screenshots/spaceinvaders.png)
+* Mechanics;
 
-## "Procedural" side scrolling shoot'em'up 
-![SideShooterImage](Screenshots/sideshooter.png)
+Target audience;
 
-## Asteroids
-![AsteroidsImage](Screenshots/asteroids.png)
+Monetization, platforms;
 
-## Commando
-![CommandoImage](Screenshots/commando.png)
+Unique Selling Point (USP);
 
-# Documentation
+Progression;
 
-For now, there's no documentation yet, but everything has custom editors, which display information on what each thing is doing (dynamically, depending on options selected):
+Change Log; 
 
-![InspectorImage](Screenshots/inspector.png)
+## Developer Team:
 
-In this image, we can see a bit of the inspector of a normal object (the player object in the asteroids sample). There's the normal Unity components (Sprite Renderer, Rigidbody, Collider), and then we have 
-several Okapi Kit components (identifiable by the large title). We have a movement script (rotation movement), an hypertag (allows to define what this object is, usefull to identify objects in collisions or
-as targets for operations), we have a collision Trigger (with the text that explains when it triggers,
-and what happens), and finally we have several Action scripts (used by the Triggers), that also explain what they're doing.
 
-# Licenses
+Henrique Monteiro Nº 22202855 - 1º ano 
 
-* All source code by Diogo Andrade is licensed under the MIT license.
-* Font "Karmatic Arcade" by [Vic Fieger]
-* Breakout paddle by [Zealex], licensed under [CC-BY 3.0]
-* Breakout bricks by [Pavel Kutejnikov], licensed under [CC0]
-* Space Invaders enemies and player by [Clear_code], licensed under [CC-BY 4.0]
-* Tiles for space shooter by [mieki256], licensed under [CC0]
-* Space ships for space shooter by [SCaydi], licensed under [CC-BY 4.0]
-* Explosion by [Joshua Robertson], licensed under [CC-BY 3.0]
-* Top down ships by [Master484], licensed under [CC0]
-* Asteroid by [Warspawn], licensed under [CC0]
-* Nebula background by [leyren], licensed under [CC0]
-* Desert texture by [pansapiens], licensed under [CC0]
-* Survivor top down sprites by [rileygombart], licensed under [CC-BY 3.0]
-* Top-down buildings by [chabull], licensed under [CC-BY 3.0]
-* Editor icons from [FlatIcon]
-* Title imagem from [Midjourney]
-* [NaughtyAttributes] by Denis Rizov, available through the MIT license.
+António Rodrigues Nº 22202884 - 1º ano
 
-# Metadata
+Daniel Fernandes Nº a22202501 - 1º ano
 
-* Autor: [Diogo Andrade]
 
-[Diogo Andrade]:https://github.com/DiogoDeAndrade
-[NaughtyAttributes]:https://github.com/dbrizov/NaughtyAttributes
-[ULHT]:https://www.ulusofona.pt/
-[lv]:https://www.ulusofona.pt/licenciatura/videojogos
-[Vic Fieger]:http://www.vicfieger.com/
-[Zealex]:https://opengameart.org/users/zealex
-[Pavel Kutejnikov]:https://opengameart.org/users/kutejnikov
-[Clear_code]:https://opengameart.org/users/clearcode
-[mieki256]:https://opengameart.org/users/mieki256
-[SCaydi]:https://opengameart.org/users/scaydi
-[Joshua Robertson]:https://opengameart.org/users/jrob774
-[Master484]:http://m484games.ucoz.com/
-[Warspawn]:https://opengameart.org/users/warspawn
-[pansapiens]:https://opengameart.org/users/pansapiens
-[chabull]:https://opengameart.org/users/chabull
-[CC0]:https://creativecommons.org/publicdomain/zero/1.0/
-[CC-BY 3.0]:https://creativecommons.org/licenses/by/3.0/
-[CC-BY 4.0]:https://creativecommons.org/licenses/by/4.0/
-[FlatIcon]:Flaticon.com
-[Midjourney]:https://midjourney.com/
+## Story Lore:
+
+Rango, a chameleon that dreams of being an actor and discovering his true self, ends up being in the hottest desert he has ever witnessed. Now with predators all around and a ruthless sun that sheds even the most protective scales, he must find cover and a way to survive. 
+
+
+
+
+
+
+
+
+## Game Themes: 
+
+The theme of the game is self-discovery and a complicated journey our main character has to live so he can finally find himself and surpass every obstacle. Rango will put himself in difficult situations that once lied about. 
+
+
+
+
+## Game Genre:
+
+Rango - The Game is a 2d pixel art sidescroller game. Players will have to understand simple and complicated puzzles while trying to keep rango out of the sun for some time.
+
+## Gameplay:
+
+Players will have to hide rango off the sun while trying to unlock some areas and items. Rango will need these items to power up and solve some puzzles that might not seem very easy at first.
+
+### Mechanics: 
+
+* Rango will have the opportunity of using his tongue to reach some items and places that wouldn't be possible for Rango himself.
+
+* Rango will have to avoid the sun, otherwise he will lose his scaling and will be too hot to move.
+
+![Example](https://cdn.discordapp.com/attachments/1021536457615212608/1105246392441655326/image.png "Ex.1")
+
+* The capsule represents Rango that will shoot the red platform making the white platform  fall and make shadow for him to pass without touching the sun.
+
+![Example2](https://cdn.discordapp.com/attachments/1021536457615212608/1105246754930180257/Captura_de_ecra_2023-05-08_002235.png "Ex.2")
+
+
+* Rango will have cactus juice that when he drinks it will make him run faster, giving the player the chance to get to the shadow/safety faster.
+
+![Example3](https://cdn.discordapp.com/attachments/1021536457615212608/1105247629048295434/Imagem_WhatsApp_2023-05-08_as_00.48.48.jpg "Ex.3")
+
+* The environment like boxes, cactus and barrels will be also available as items for rango to shoot and ricochet or break so he creates a passage and avoids the sun. It creates a more immersive world in the lore and also makes sense for the game.
+
+
+
+
+
+## Target Audience:
+
+Players who enjoy the movie in general will have a good time in the game. Being a puzzle game and not with a big quick paced gameplay like an “FPS” not all players will enjoy it. 
+The game aims for an audience between the ages of 6 to 24, but every fan of the movie “Rango” will find good references and enjoy a good time in the game.
+
+
+
+
+## Monetization and Platforms:
+
+The game is free to play, and will be available to Playstation 4, Xbox, Switch and PC.
+
+## Unique Selling Point:
+
+Besides being free to play, the player will experience a true chameleon life. With awesome shadow riddles and puzzles the player will have to think like a chameleon to pass the game.
+The player will also be gifted with funny Johnny Depp voice lines.
+
+
+## Progression:
+
+To progress in the game the player will have to solve the puzzles and unlock new items by doing so.
+
+
+As the game progresses new items and power ups will be given to the player, although the difficulty of the levels will gradually increase with them as well. 
+
+* The player will first start with only his gun with one shot and will try to ricochet the bullet off a platform so the character can pass without dying from the sun. 
+
+* After that the player will find the cactus juice item that will speed up the player velocity and cancel the slo0w down time the sun gives to the movement of the player.
+
+* The player will also start finding water bottles in the map that will give him more life/hydration.
+
+* The puzzles will get harder and will require the player to use this power ups in a certain order, or with a bit of freedom. 
+
+# Change Log
+
+
+
+| Date      | Changes | Name |
+| ----------- | ----------- | ---------|
+| 05/05/2023      | Changed the “Progression”, added more info on which items will appear in the map and how they work. Added “Change Log” to track updates       |     Henrique Monteiro     |
+| 06/05/2023      | Updated “Gameplay - Mechanics” to make it easier to understand to the reader, also added images. Updated “Target Audience” |     Henrique Monteiro     |
+| 08/05/2023      | Updated “Unique selling Point”, Johnny Depp. Updated “Mechanics”|     Henrique Monteiro     |
