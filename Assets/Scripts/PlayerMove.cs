@@ -136,6 +136,8 @@ public class PlayerMove : MonoBehaviour
 
         animator.SetFloat("MoveSpeed", Mathf.Abs(currentVelocity.x));
 
+        animator.SetBool("cactusActive", moveSpeed == cactusSpeed);
+
         if (cactusReady)
         {
             moveSpeed = cactusSpeed;
