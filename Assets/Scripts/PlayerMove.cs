@@ -234,14 +234,6 @@ public class PlayerMove : MonoBehaviour
 
         FlipPlayer();
 
-        if (grounded)
-        {
-            gameObject.GetComponent<SpriteRenderer>().color = Color.green;
-        }
-        else
-        {
-            gameObject.GetComponent<SpriteRenderer>().color = Color.red;
-        }
     }
 
     private void FlipPlayer()
