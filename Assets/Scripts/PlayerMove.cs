@@ -41,6 +41,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField, Header("\nCactus")] private bool cactusReady = false;
     [SerializeField] private float cactusSpeed;
     [SerializeField] private float cactusTimer;
+    [SerializeField] private Animator cactusBarAnimator;
     private float cactusWasActivated;
 
     // Variables for the burp power up
@@ -137,12 +138,14 @@ public class PlayerMove : MonoBehaviour
         animator.SetFloat("MoveSpeed", Mathf.Abs(currentVelocity.x));
 
         animator.SetBool("cactusActive", moveSpeed == cactusSpeed);
+        
 
         if (cactusReady)
         {
             moveSpeed = cactusSpeed;
 
             cactusWasActivated = Time.time;
+            cactusBarAnimator.SetTrigger("cactusDrank");
 
             SetCactusPower(false);
         }
