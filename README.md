@@ -3,26 +3,25 @@
 
 
 ## Table of Contents:
+* Story (Lore);
 
-Story (Lore);
+* Themes;
 
-Themes;
+* Game Genre;
 
-Game Genre;
-
-Gameplay;
+* Gameplay;
  
-Mechanics;
+* Mechanics;
 
-Target audience;
+* Target audience;
 
-Monetization, platforms;
+* Monetization, platforms;
 
-Unique Selling Point (USP);
+* Unique Selling Point (USP);
 
-Progression;
+* Progression;
 
-Change Log; 
+* Change Log; 
 
 ## Developer Team:
 
