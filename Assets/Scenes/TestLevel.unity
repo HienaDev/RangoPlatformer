@@ -5308,6 +5308,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1454988531634630686, guid: ed0494b0138a23a439303995403ecec1, type: 3}
+      propertyPath: m_Volume
+      value: 0.499
+      objectReference: {fileID: 0}
+    - target: {fileID: 7102971951107767393, guid: ed0494b0138a23a439303995403ecec1, type: 3}
+      propertyPath: Priority
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 7102971951107767393, guid: ed0494b0138a23a439303995403ecec1, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 8749399229942031603, guid: ed0494b0138a23a439303995403ecec1, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -5372,6 +5384,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8749399229942031624, guid: ed0494b0138a23a439303995403ecec1, type: 3}
+      propertyPath: audioShot
+      value: 
+      objectReference: {fileID: 8300000, guid: 875e713913984134d814a854ab2082c1, type: 3}
     - target: {fileID: 8749399229942031624, guid: ed0494b0138a23a439303995403ecec1, type: 3}
       propertyPath: bulletSign
       value: 

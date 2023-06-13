@@ -1,16 +1,12 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 6bfa172f4d4ff484c9ca40516dbd4097
-=======
-guid: 3427a22d6da432f4f8041274006c27b3
->>>>>>> d1946d53e69166a99e5a9bbfa1cf9c835dfdcfbd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,33 +33,21 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<< HEAD
-    filterMode: 1
-=======
     filterMode: 0
->>>>>>> d1946d53e69166a99e5a9bbfa1cf9c835dfdcfbd
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-<<<<<<< HEAD
-  spriteMode: 1
-=======
   spriteMode: 2
->>>>>>> d1946d53e69166a99e5a9bbfa1cf9c835dfdcfbd
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
-  spritePixelsToUnits: 100
-=======
   spritePixelsToUnits: 1
->>>>>>> d1946d53e69166a99e5a9bbfa1cf9c835dfdcfbd
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -78,19 +62,15 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
-  cookieLightType: 0
+  applyGammaDecoding: 1
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-<<<<<<< HEAD
-    textureCompression: 1
-=======
     textureCompression: 0
->>>>>>> d1946d53e69166a99e5a9bbfa1cf9c835dfdcfbd
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -102,7 +82,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -114,24 +94,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
-  spriteSheet:
-    serializedVersion: 2
-    sprites: []
-=======
   - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -143,7 +118,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -155,7 +130,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -169,10 +144,10 @@ TextureImporter:
       name: firerunin_ani_2_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 3
         y: 0
-        width: 40
-        height: 34
+        width: 32
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,8 +155,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a40c6c4698a55a845be0f7ba1be75243
-      internalID: -996936957
+      spriteID: 2aa91e56e12713d4da49f51d84729211
+      internalID: 1099532013
       vertices: []
       indices: 
       edges: []
@@ -190,10 +165,10 @@ TextureImporter:
       name: firerunin_ani_2_1
       rect:
         serializedVersion: 2
-        x: 40
+        x: 43
         y: 0
-        width: 40
-        height: 34
+        width: 32
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -201,8 +176,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f33e29363ddf8240b69d8b98536c8c6
-      internalID: -696208246
+      spriteID: b7bd3e239aeb0334e9065dc359417954
+      internalID: 601157397
       vertices: []
       indices: 
       edges: []
@@ -211,10 +186,10 @@ TextureImporter:
       name: firerunin_ani_2_2
       rect:
         serializedVersion: 2
-        x: 80
+        x: 83
         y: 0
-        width: 40
-        height: 34
+        width: 32
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,8 +197,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 260192fe26f3fc84bac60ff6af21de94
-      internalID: -1115131251
+      spriteID: 24ee67d4324eda548ba22313eba19d28
+      internalID: -1472779449
       vertices: []
       indices: 
       edges: []
@@ -232,10 +207,10 @@ TextureImporter:
       name: firerunin_ani_2_3
       rect:
         serializedVersion: 2
-        x: 120
+        x: 122
         y: 0
-        width: 40
-        height: 34
+        width: 32
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f76b9d838906c0c43be49b098731d39f
-      internalID: -2047821612
+      spriteID: 2868cdfd4bf325e4dbce8ef5f5e75d74
+      internalID: -1827353296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: firerunin_ani_2_4
+      name: firerunin_ani_2_5
       rect:
         serializedVersion: 2
-        x: 160
-        y: 0
-        width: 40
-        height: 34
+        x: 163
+        y: 1
+        width: 32
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,33 +239,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83957b27b1f8bda439aeabc9bcf81911
-      internalID: -482984529
+      spriteID: 814bdb3cb7642df4a85ffff59e84f3c9
+      internalID: -99175200
       vertices: []
       indices: 
       edges: []
       weights: []
->>>>>>> d1946d53e69166a99e5a9bbfa1cf9c835dfdcfbd
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 470c2bc545be6db44b4c5269f21a0f05
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-<<<<<<< HEAD
-    nameFileIdTable: {}
-=======
     nameFileIdTable:
-      firerunin_ani_2_1: -696208246
-      firerunin_ani_2_3: -2047821612
-      firerunin_ani_2_4: -482984529
-      firerunin_ani_2_0: -996936957
-      firerunin_ani_2_2: -1115131251
->>>>>>> d1946d53e69166a99e5a9bbfa1cf9c835dfdcfbd
+      firerunin_ani_2_1: 601157397
+      firerunin_ani_2_3: -1827353296
+      firerunin_ani_2_4: -562222451
+      firerunin_ani_2_0: 1099532013
+      firerunin_ani_2_5: -99175200
+      firerunin_ani_2_2: -1472779449
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
