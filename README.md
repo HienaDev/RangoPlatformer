@@ -93,8 +93,8 @@ The player will control Rango the main character of the film and will have to so
 * Rango life's is quantified by his level of hydration which he can see on the screen, whenever Rango is out of the shade, will get lower. If the recipient reaches zero water then Rango will die and the player will have to restart the level by pressing ("R");
 
 * Rango has acces to two collectibles that activate his power ups: One Shot and Cactus Juice:
- * - One Shot: The player has a single bullet to shoot destroyable objects to pass the level.
- * - Cactus Juice: The player gains a burst of movement speed for 5 seconds, and then spits fire which also breaks destroyable objects. 
+- One Shot: The player has a single bullet to shoot destroyable objects to pass the level.
+- Cactus Juice: The player gains a burst of movement speed for 5 seconds, and then spits fire which also breaks destroyable objects. 
 
 
 * Here rango has to shoot the chain holding the branch up, after he shoots it, it will fall and rango will have enough shade to cross the level:
