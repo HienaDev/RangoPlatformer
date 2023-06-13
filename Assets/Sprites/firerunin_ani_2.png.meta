@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 6bfa172f4d4ff484c9ca40516dbd4097
+=======
 guid: 3427a22d6da432f4f8041274006c27b3
+>>>>>>> d1946d53e69166a99e5a9bbfa1cf9c835dfdcfbd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +37,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
+    filterMode: 1
+=======
     filterMode: 0
+>>>>>>> d1946d53e69166a99e5a9bbfa1cf9c835dfdcfbd
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,12 +50,20 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
+<<<<<<< HEAD
+  spriteMode: 1
+=======
   spriteMode: 2
+>>>>>>> d1946d53e69166a99e5a9bbfa1cf9c835dfdcfbd
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
+  spritePixelsToUnits: 100
+=======
   spritePixelsToUnits: 1
+>>>>>>> d1946d53e69166a99e5a9bbfa1cf9c835dfdcfbd
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,7 +86,11 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
+    textureCompression: 1
+=======
     textureCompression: 0
+>>>>>>> d1946d53e69166a99e5a9bbfa1cf9c835dfdcfbd
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -101,6 +121,11 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
+  spriteSheet:
+    serializedVersion: 2
+    sprites: []
+=======
   - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
@@ -245,6 +270,7 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+>>>>>>> d1946d53e69166a99e5a9bbfa1cf9c835dfdcfbd
     outline: []
     physicsShape: []
     bones: []
@@ -255,12 +281,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+<<<<<<< HEAD
+    nameFileIdTable: {}
+=======
     nameFileIdTable:
       firerunin_ani_2_1: -696208246
       firerunin_ani_2_3: -2047821612
       firerunin_ani_2_4: -482984529
       firerunin_ani_2_0: -996936957
       firerunin_ani_2_2: -1115131251
+>>>>>>> d1946d53e69166a99e5a9bbfa1cf9c835dfdcfbd
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
