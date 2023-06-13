@@ -93,32 +93,21 @@ The player will control Rango the main character of the film and will have to so
 * Rango life's is quantified by his level of hydration which he can see on the screen, whenever Rango is out of the shade, will get lower. If the recipient reaches zero water then Rango will die and the player will have to restart the level by pressing ("R");
 
 * Rango has acces to two collectibles that activate his power ups: One Shot and Cactus Juice:
-  - One Shot: The player has a single bullet to shoot destroyable objects to pass the level.
+  - One Shot: The player has a single bullet to shoot destroyable objects to pass the level:
+    ![Example](https://cdn.discordapp.com/attachments/1116658016020877332/1118302759733702666/image.png)
   - Cactus Juice: The player gains a burst of movement speed for 5 seconds, and then spits fire which also breaks destroyable objects. 
-
+    ![Example](https://cdn.discordapp.com/attachments/1116658016020877332/1118302925723291659/image.png)
+    ![Example](https://cdn.discordapp.com/attachments/1116658016020877332/1118302970199670814/image.png)
 
 * Here rango has to shoot the chain holding the branch up, after he shoots it, it will fall and rango will have enough shade to cross the level:
 ![Example](https://cdn.discordapp.com/attachments/1081943367090450564/1118301374363484310/image.png)
 
 ![Example](https://cdn.discordapp.com/attachments/1116658016020877332/1118301861448011808/image.png)
 
-* Here rango has to shoot the chain holding the branch up, after he shoots it, it will fall and rango will have enough shade to cross the level. 
-
-
-![Example2](https://cdn.discordapp.com/attachments/1021536457615212608/1105246754930180257/Captura_de_ecra_2023-05-08_002235.png "Ex.2")
-
-
-* Upon the player obtaining the cactus juice item, Rango will start to move more quickly for a short duration ( 7 seconds), and in the final 2 seconds of the improved movement, he will spit fire. While on fire the player can use the burning breath of the character to burn ropes to open paths and exits to the next levels. 
-
-![Example3](https://cdn.discordapp.com/attachments/1021536457615212608/1105247629048295434/Imagem_WhatsApp_2023-05-08_as_00.48.48.jpg "Ex.3")
-
-* The environment like boxes, cactus, and barrels will be also available as items for Rango to shoot and ricochet or break so he creates a passage and avoids the sun. It creates a more immersive world in the lore and also makes sense for the game.
-
-
 
 ## Target Audience:
 
-The puzzles in the game are designed more for an audience between eight and ten, and for that, all the art focus on a more childish approach with simplistic pixel art and vibrant colors. Being a game with a known movie at its core, every big fan of the movie "Rango"  will most likely feel the curiosity to try the game at least once.
+The puzzles in the game are designed for an audience between eight and ten years old, the art focuses on a more childish approach with simplistic pixel art and vibrant colors. Being a game about a movie, every big fan of the movie "Rango"  will most likely feel the curiosity to try the it at least once.
 
 
 
@@ -129,8 +118,8 @@ The game is free to play and will be available on PlayStation 4, Xbox, Switch, a
 
 ## Unique Selling Point:
 
-Besides being free to play, the player will experience a true chameleon life. With awesome shadow riddles and puzzles, the player will have to think like a chameleon to pass the game.
-The player will also be gifted with funny Johnny Depp voice lines.
+Besides being free to play, the player will experience the life of chameleon trying to survive dehydration in the desert. With awesome shadow riddles and puzzles, the player will have to think like Rango to pass each one of them.
+The player will also be presented with funny Johnny Depp voice lines.
 
 
 ## Progression:
@@ -157,3 +146,4 @@ As the game progresses new items and power-ups will be given to the player, alth
 | 08/05/2023      | Updated “Unique Selling Point”, Johnny Depp. Updated “Mechanics”|     Henrique Monteiro     |
 | 09/06/2023      | Completly changed all the unique selling points.|     Henrique Monteiro     |
 | 10/06/2023      |Updated all the mechanics so they are more obvious and understandable|     Henrique Monteiro     |
+| 13/06/2023      |Updated mechanics tab with the most recent screenshots and info|     António Rodrigues     |
