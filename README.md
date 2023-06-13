@@ -70,14 +70,14 @@ And so, Rango ventured into the vast desert, ready to embrace whatever challenge
 
 
 
-## Game Themes: 
+## Game's Theme: 
 
 There's a water shortage in the town of Dirt, and our main character Rango tries to find the reason for the shortage. Avoid the sun at all costs to avoid dehydration and find the culprit!
 
 
 
 
-## Game Genre:
+## Game's Genre:
 
 Rango - The Game is a 2d pixel art sidescroller game. Players will have to understand simple puzzles while trying to keep Rango out of the sun for some time otherwise he will be dehydrated and will stop die.
 
