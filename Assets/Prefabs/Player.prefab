@@ -213,7 +213,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8749399228880325709}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.5, y: 3.1, z: 0}
+  m_LocalPosition: {x: 15.35, y: -0.56, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -394,7 +394,7 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   m_ShapePathHash: 0
   m_Mesh: {fileID: 0}
-  m_InstanceId: 64974
+  m_InstanceId: 80218
 --- !u!114 &8749399229942031605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,7 +443,7 @@ MonoBehaviour:
   cactusTimer: 5
   cactusBarAnimator: {fileID: 2743055071571616241, guid: ce4b4856ab96fb74fbf3d4e8b41c6759, type: 3}
   fireBurp: {fileID: 1184419439429408858}
-  fireBurpTimer: 2
+  fireBurpTimer: 0.5
   oneShotReady: 0
   bullet: {fileID: 7019537578791215951, guid: db23d8b1d8c7bee4891e25ca6793bcac, type: 3}
   bulletSign: {fileID: 0}
