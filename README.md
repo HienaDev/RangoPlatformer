@@ -93,9 +93,13 @@ The player will control Rango the main character of the film and will have to so
 
 * Rango has acces to two collectibles that activate his power ups: One Shot and Cactus Juice:
   - One Shot: The player has a single bullet to shoot destroyable objects to pass the level:
+    
     ![Example](https://cdn.discordapp.com/attachments/1116658016020877332/1118302759733702666/image.png)
-  - Cactus Juice: The player gains a burst of movement speed for 5 seconds, and then spits fire which also breaks destroyable objects. 
+    
+  - Cactus Juice: The player gains a burst of movement speed for 5 seconds, and then spits fire which also breaks destroyable objects.
+    
     ![Example](https://cdn.discordapp.com/attachments/1116658016020877332/1118302925723291659/image.png)
+    
     ![Example](https://cdn.discordapp.com/attachments/1116658016020877332/1118302970199670814/image.png)
 
 * Here rango has to shoot the chain holding the branch up, after he shoots it, it will fall and rango will have enough shade to cross the level:
