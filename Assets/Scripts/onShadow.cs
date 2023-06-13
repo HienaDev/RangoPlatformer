@@ -16,6 +16,8 @@ public class OnShadow : MonoBehaviour
 
     private LineRenderer line;
 
+    [SerializeField] private GameObject filter;
+
     // Start is called before the first frame update
     
     private void Start()
@@ -44,16 +46,20 @@ public class OnShadow : MonoBehaviour
         line.SetPositions(positions);
         //Debug.Log(hit.transform);
 
+        line.startColor = Color.clear;
+        line.endColor = Color.clear;
+
         if (hit.transform == null && dehydrationBar.transform.localScale.x > 0 && dehydrationBar.fillAmount > 0)
         {
             dehydrationBar.fillAmount -= dehydrationSpeed;
+            filter.SetActive(true);
             line.startColor = Color.red;
             line.endColor = Color.red;
         }
         else
         {
-            line.startColor = Color.white;
-            line.endColor = Color.white;
+            filter.SetActive(false);
+            
         }
     }
 }

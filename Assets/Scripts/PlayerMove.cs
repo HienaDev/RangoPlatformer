@@ -75,6 +75,8 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private AudioClip audioShot;
     [SerializeField] private AudioSource audioWalking;
 
+    
+
 
 
     // Start is called before the first frame update
