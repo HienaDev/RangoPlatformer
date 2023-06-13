@@ -63,11 +63,16 @@ public class PlayerMove : MonoBehaviour
     private CameraFollow cameraScript;
 
     // Cameras related to mouse
-    [SerializeField, Header("\nMouse")] GameObject mouseObject;
+    [SerializeField, Header("\nMouse")] private GameObject mouseObject;
     private Vector2 lookDirection;
     private float lookAngle;
 
-    
+    // Sound
+    [SerializeField, Header("\nSound")] private AudioSource audioSource;
+    [SerializeField] private AudioClip audioScream;
+    [SerializeField] private AudioClip audioBurp;
+
+
 
     // Start is called before the first frame update
     private void Start()
@@ -146,6 +151,9 @@ public class PlayerMove : MonoBehaviour
 
             cactusWasActivated = Time.time;
             cactusBarAnimator.SetTrigger("cactusDrank");
+            audioSource.loop = true;
+            audioSource.clip = audioScream;
+            audioSource.Play();
 
             SetCactusPower(false);
         }
@@ -167,6 +175,9 @@ public class PlayerMove : MonoBehaviour
 
         if (fireBurpReady)
         {
+            audioSource.loop = false;
+            audioSource.clip = audioBurp;
+            audioSource.Play();
             fireBurp.SetActive(true);
             fireBurpWasActivated = Time.time;
 
@@ -175,7 +186,12 @@ public class PlayerMove : MonoBehaviour
 
         if ((Time.time - fireBurpWasActivated) > fireBurpTimer)
         {
+            if (fireBurp.activeSelf == true)
+            {
+                cactusBarAnimator.GetComponent<SpriteRenderer>().color = new Color(0.5f, 0.5f, 0.5f);
+            }
             fireBurp.SetActive(false);
+            
         }
 
 
