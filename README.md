@@ -105,6 +105,9 @@ The player will control Rango the main character of the film and will have to so
 * Here rango has to shoot the chain holding the branch up, after he shoots it, it will fall and rango will have enough shade to cross the level:
 ![Example](https://cdn.discordapp.com/attachments/1081943367090450564/1118301374363484310/image.png)
 
+![image](https://github.com/HienaDev/RangoPlatformer/assets/94871191/0ca7d557-ac9a-421e-8bf6-31debba3c095)
+
+
 ![Example](https://cdn.discordapp.com/attachments/1116658016020877332/1118301861448011808/image.png)
 
 
