@@ -11,8 +11,8 @@ Themes;
 Game Genre;
 
 Gameplay;
-
-* Mechanics;
+ 
+Mechanics;
 
 Target audience;
 
