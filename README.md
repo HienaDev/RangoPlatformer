@@ -73,14 +73,14 @@ And so, Rango ventured into the vast desert, ready to embrace whatever challenge
 
 ## Game Themes: 
 
-The theme of the game is self-discovery and the complicated journey our main character has to live so he can finally find himself and surpass every obstacle. Rango will put himself in difficult situations that once lied about. And in the end, understand that his inner strength was more powerful than any lie he could tell 
+There's a water shortage in the town of Dirt, and our main character Rango tries to find the reason for the shortage. Avoid the sun at all costs to avoid dehydration and find the culprit!
 
 
 
 
 ## Game Genre:
 
-Rango - The Game is a 2d pixel art sidescroller game. Players will have to understand simple puzzles while trying to keep Rango out of the sun for some time otherwise he will be dehydrated and will stop moving, making the player lose the level.
+Rango - The Game is a 2d pixel art sidescroller game. Players will have to understand simple puzzles while trying to keep Rango out of the sun for some time otherwise he will be dehydrated and will stop die.
 
 ## Gameplay:
 
@@ -88,13 +88,16 @@ The player will control Rango the main character of the film and will have to so
 
 ### Mechanics: 
 
-* The basic movement of the player will be walking right and left and the player will be able to jump. The jump changed depending on the player's input. If the player clicks the jump key (space bar) for a longer time then, the jump will be higher, reaching a little bit more than double the size of the player character. If only quickly pressed the jump will be quicker and shorter, which can be a good choice when jumping from platform to platform.
+* The basic movement of the player will be walking right and left and the player will be able to jump. The jump changes depending on the player's input. If the player holds the jump key (space bar) for a longer time then, he'll jump higher. 
 
-* Rango life's is quantified by his level of hydration so on the screen the player will see a water recipient that whenever Rango is in contact with the sun, will get lower. If the recipient reaches zero water then Rango will stop moving and the player will have to restart the level by pressing ("R");
+* Rango life's is quantified by his level of hydration which he can see on the screen, whenever Rango is out of the shade, will get lower. If the recipient reaches zero water then Rango will die and the player will have to restart the level by pressing ("R");
 
-![Example](https://cdn.discordapp.com/attachments/1021536457615212608/1105246392441655326/image.png "Ex.1")
+![Example](https://cdn.discordapp.com/attachments/1081943367090450564/1118301374363484310/image.png)
 
-* The capsule represents Rango that will shoot the red platform making the white platform fall and make shade for him to pass without touching the sun. The player only can shoot if he acquired the "shoot" power up in the map and will only have one shot per level. If the player does miss his shot and the power-up disappears it means the player will have to restart the level. 
+![Example](https://cdn.discordapp.com/attachments/1116658016020877332/1118301861448011808/image.png)
+
+* Here rango has to shoot the chain holding the branch up, after he shoots it, it will fall and rango will have enough shade to cross the level. 
+
 
 ![Example2](https://cdn.discordapp.com/attachments/1021536457615212608/1105246754930180257/Captura_de_ecra_2023-05-08_002235.png "Ex.2")
 
