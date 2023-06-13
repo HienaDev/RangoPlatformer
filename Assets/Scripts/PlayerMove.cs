@@ -71,6 +71,8 @@ public class PlayerMove : MonoBehaviour
     [SerializeField, Header("\nSound")] private AudioSource audioSource;
     [SerializeField] private AudioClip audioScream;
     [SerializeField] private AudioClip audioBurp;
+    [SerializeField] private AudioClip audioShot;
+    [SerializeField] private AudioSource audioWalking;
 
 
 
@@ -86,6 +88,8 @@ public class PlayerMove : MonoBehaviour
 
         camera = Camera.main;
 
+        audioWalking.volume = 0f;
+
         cameraScript = camera.GetComponent<CameraFollow>();
 
     }
@@ -97,6 +101,7 @@ public class PlayerMove : MonoBehaviour
             if (camera.orthographicSize > 160)
             { 
                 camera.orthographicSize -= 0.5f;
+                cactusBarAnimator.transform.position = new Vector3(cactusBarAnimator.transform.position.x, cactusBarAnimator.transform.position.y - 0.5f, cactusBarAnimator.transform.position.z);
                 bulletSign.transform.position = new Vector3(bulletSign.transform.position.x, bulletSign.transform.position.y - 0.5f, bulletSign.transform.position.z);
             }
         }
@@ -105,6 +110,7 @@ public class PlayerMove : MonoBehaviour
             if (camera.orthographicSize < 180)
             { 
                 camera.orthographicSize += 0.5f;
+                cactusBarAnimator.transform.position = new Vector3(cactusBarAnimator.transform.position.x, cactusBarAnimator.transform.position.y + 0.5f, cactusBarAnimator.transform.position.z);
                 bulletSign.transform.position = new Vector3(bulletSign.transform.position.x, bulletSign.transform.position.y + 0.5f, bulletSign.transform.position.z);
             }
 
@@ -122,6 +128,8 @@ public class PlayerMove : MonoBehaviour
                 {
                     
                     ShootOneShot();
+                    audioSource.volume = 0.7f;
+                    audioSource.PlayOneShot(audioShot);
                     oneShotReady = false;
                 }
             }
@@ -157,7 +165,7 @@ public class PlayerMove : MonoBehaviour
             cactusBarAnimator.SetTrigger("cactusDrank");
             audioSource.loop = true;
             audioSource.clip = audioScream;
-            audioSource.volume = 0.5f;
+            audioSource.volume = 0.3f;
             audioSource.Play();
 
             SetCactusPower(false);
@@ -215,7 +223,16 @@ public class PlayerMove : MonoBehaviour
 
 
         currentVelocity.x = Input.GetAxis("Horizontal") * moveSpeed;
-        
+
+        if (currentVelocity.x != 0 && moveSpeed == defaultSpeed)
+        {
+            audioWalking.volume = 0.05f;
+
+            
+        }
+        else
+            audioWalking.volume = 0f;
+
 
         if (grounded && currentVelocity.y <= 1e-3)
         {

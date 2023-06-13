@@ -6,6 +6,12 @@ public class DestroyCollision : MonoBehaviour
 {
     [SerializeField] private LayerMask destroyableLayer;
     [SerializeField] private LayerMask bouncyLayer;
+    private AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -17,10 +23,13 @@ public class DestroyCollision : MonoBehaviour
 
 
         if (x == destroyableLayer.value)
-            Destroy(collision.gameObject);  
+            Destroy(collision.gameObject);
 
         if (!(x == bouncyLayer.value))
-            Destroy (gameObject);
+            Destroy(gameObject);
+        else
+            audioSource.Play();
+            
     }
 
     private void OnTriggerStay2D(Collider2D collision)
